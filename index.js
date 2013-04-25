@@ -23,7 +23,7 @@ YMaps.Events.observe(map, map.Events.BoundsChange, function(map) {
         for(var i = 0; i < data.response.venues.length; i++) {
           var venue = data.response.venues[i];
 
-          if (plotted_venues_ids[venue.id]) {
+          if (plotted_venues_ids[venue.id] === undefined) {
             var venue_location = new YMaps.GeoPoint(venue.location.lng, venue.location.lat);
             var venue_name = venue.name;
 
