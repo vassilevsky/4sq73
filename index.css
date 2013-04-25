@@ -1,0 +1,12 @@
+body {
+  background-color: gray;
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+#map_placeholder {
+  text-align: center;
+  vertical-align: middle;
+  font-size: large;
+  color: silver;
+}
