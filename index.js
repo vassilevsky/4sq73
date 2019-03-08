@@ -10,7 +10,7 @@ YMaps.Events.observe(map, map.Events.BoundsChange, function(map) {
     data: {
       client_id: 'XKBFBXHOCLKHTLGERTD2FR0XEZM0A0RW5MSWSCNGNFW10TVM',
       client_secret: 'IWD13I0PNJLXMJVNROPY5VYRD05HY2B1OXLL0P5VLC5TIFMW',
-      v: 20111030,
+      v: 20190308,
       intent: 'browse',
       sw: ''+bounds.getBottom()+','+bounds.getLeft(),
       ne: ''+bounds.getTop()+','+bounds.getRight(),
