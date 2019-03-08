@@ -25,14 +25,8 @@ YMaps.Events.observe(map, map.Events.BoundsChange, function(map) {
 
           if (plotted_venues_ids[venue.id] === undefined) {
             var venue_location = new YMaps.GeoPoint(venue.location.lng, venue.location.lat);
-            var venue_name = venue.name;
-
-            if (venue.hereNow.count) {
-              venue_name += ' (' + venue.hereNow.count + ')';
-            }
-
             var placemark = new YMaps.Placemark(venue_location);
-            placemark.setIconContent(venue_name);
+            placemark.setIconContent(venue.name);
             map.addOverlay(placemark);
             plotted_venues_ids[venue.id] = true;
           }
